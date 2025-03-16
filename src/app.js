@@ -18,7 +18,7 @@ window.onload = function() {
   excuseElement.innerHTML = excuse;
 
   document.getElementById("button").addEventListener("click", newExcuse);
-  document.getElementById("hideBtn").addEventListener("click", hideDiv);
+  document.getElementById("hideExBtn").addEventListener("click", hideExcuseDiv);
 };
 
 function newExcuse() {
@@ -47,11 +47,14 @@ function generateExcuse(array1, array2, array3, array4) {
   );
 }
 
-function hideDiv() {
-  var x = document.getElementById("main");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+function hideExcuseDiv() {
+  var excuseDiv = document.getElementById("excuseGen");
+  let button = document.getElementById("hideExBtn");
+  if (excuseDiv.style.display === "none") {
+    excuseDiv.style.display = "block";
+    button.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
   } else {
-    x.style.display = "none";
+    excuseDiv.style.display = "none";
+    button.innerHTML = '<i class="fa-solid fa-eye"></i>';
   }
 }

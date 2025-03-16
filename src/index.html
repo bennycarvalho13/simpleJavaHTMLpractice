@@ -3,26 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Frontend Practice</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <script
+      src="https://kit.fontawesome.com/8dac9922cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="assets/img/4geeks.ico" />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <div id="main">
-        <h1 id="excuse" class="mt-5">Excuse</h1>
+      <h1 class="my-3">CSS and Bootstrap Interactivity Practice</h1>
+
+      <h2 class="my-1 text-start">Excuse Generator:</h2>
+      <div class="border border-dark border-2 rounded my-2 py-2" id="excuseGen">
+        <p id="excuse" class="fs-2">Excuse</p>
         <button id="button" class="btn btn-primary">
           Generate Excuse
         </button>
       </div>
-      <button id="hideBtn" class="btn btn-primary">
-        Show/hide section
-      </button>
+      <div class="row justify-content-end">
+        <div class="col-1">
+          <button id="hideExBtn" class="btn btn-primary py-2 px-3">
+            <i class="fa-solid fa-eye-slash"></i>
+          </button>
+        </div>
+      </div>
+
       <script src="/src/app.js"></script>
     </div>
   </body>
