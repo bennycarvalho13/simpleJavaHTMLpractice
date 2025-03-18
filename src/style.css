@@ -1,1 +1,27 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+#excuseGen {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgb(75, 75, 75);
+  transition: opacity 400ms ease-in-out, max-height 400ms ease-in-out;
+  opacity: 1;
+  overflow: hidden;
+}
+
+#excuseGen.hidden {
+  opacity: 0;
+  max-height: 0;
+  pointer-events: none;
+}
+
+#excuse {
+  cursor: pointer;
+}
+
+#exButton {
+  scale: 1;
+  transition: scale 400ms;
+}
+#exButton:hover {
+  scale: 1.2;
+}
